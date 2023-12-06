@@ -1,0 +1,110 @@
+@use "../utils/variables" as var;
+@use "../utils/mixins" as mxn;
+@use "../utils/helpers";
+@use "../themes/backtop";
+@use "../global";
+
+
+#news {
+    padding-top: 220px;
+    padding-bottom: 300px;
+
+    h1 {
+        @extend %title__24__black;
+        text-align: center;
+        margin-bottom: 8px;
+    }
+
+    img {
+        max-width: 40px;
+        margin-bottom: 8px;
+        transform: rotate(180deg);
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    h2 {
+        @extend %title__48__primary;
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+    .new__cards {
+        .card {
+            margin-bottom: 50px;
+            max-width: 380px;
+            border: none;
+            border-radius: 12px;
+            padding: 20px 20px 30px 20px;
+            margin-left: auto;
+            margin-right: auto;
+            overflow: hidden;
+            box-shadow: 2px 2px 1px rgb(151, 147, 147);
+            transition: 0.5s;
+
+            &:hover {
+                transform: scale(1.1);
+                box-shadow: 2px 2px 10px rgb(155, 154, 154);
+            }
+
+            img {
+                border-radius: 12px;
+                max-width: 410px;
+                width: 100%;
+                transition: 0.5s
+            }
+
+            h3 {
+                @extend %title__24__black;
+                text-transform: uppercase;
+                margin-top: 20px;
+                max-width: 432px;
+            }
+
+            .card__bottom {
+                display: flex;
+                justify-content: space-between
+            }
+
+            p {
+                @extend %title__16__text;
+            }
+
+            .card__bottom {
+                margin-top: 20px;
+
+                a {
+                    color: var.$primary-color;
+                    font-weight: 700;
+                }
+
+                span {
+                    color: var.$text-color;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+
+    .btn {
+        width: 200px;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+
+        .news__btn {
+            align-items: center;
+            justify-content: center;
+            @include mxn.btn($color:var.$subtitle-color, $bg:var.$white-color);
+            border: 2px solid var.$primary-color;
+            display: inline-block;
+            font-weight: 700;
+            text-align: center;
+
+            &:hover {
+                @include mxn.btn($color:var.$white-color !important, $bg:var.$primary-color !important);
+            }
+        }
+    }
+}

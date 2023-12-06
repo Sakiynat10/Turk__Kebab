@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="./sass/vendors/_bootstrap.scss" />
+    <link rel="stylesheet" href="./css/home.min.css" />
+    <link rel="stylesheet" href="https://loading.io/asset/707191">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div id="loading">
+      <div class="loadingio-spinner-dual-ring-rooabvpo2t">
+        <div class="ldio-82s6ihcfinc">
+        <div>
+        </div><div>
+        <div>
+        </div></div>
+        </div></div>
+    </div>
+    <div id="backtop">
+      <a href="#">
+        <img src="./assets/images/awesome.svg" alt="space" />
+      </a>
+    </div>
+    <nav
+      id="navbar"
+      class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="./assets/images/logo.png" alt="" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasDarkNavbar"
+          aria-controls="offcanvasDarkNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-start w-100 text-bg-dark"
+          tabindex="-1"
+          id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+              <img src="./assets/images/logo.png" alt="" />
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end gap-5 flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/menu.html">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/news.html">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/about.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/contact.html">Contact Us</a>
+              </li>
+              <a class="nav-log" href="#">Log in</a>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <!----------------------Hero Section---------------------->
+      <section id="hero">
+        <div class="container">
+          <div class="row">
+            <div class="hero__info col-12 col-xl-6">
+              <h3 class="mb-4">Chase the new Flavour</h3>
+              <h1 class="mb-4">The key to Fine dining</h1>
+              <p class="mb-5">
+                Sit tellus lobortis sed senectus vivamus molestie. Condimentum
+                volutpat morbi facilisis quam scelerisque sapien. Et, penatibus
+                aliquam amet tellus
+              </p>
+              <a class="mb-5" href="#">Explore Menu</a>
+            </div>
+            <div class="hero__card col-12 col-xl-6">
+              <img src="./assets/images/home-dining.png" alt="dining png" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!----------------------/Hero Section---------------------->
+
+      <!----------------------Dishes Section---------------------->
+      <section id="dishes">
+        <div class="container dish__container">
+          <h1>Popular Dishes</h1>
+          <div class="owl-carousel owl-theme dishes" id="team-carousel">
+            <div class="dish">
+              <img src="./assets/images/dish-1.png" alt="dish png" />
+              <p>Barbecue Shish kebab Shashlik Skewer</p>
+              <img
+                class="star-img"
+                src="./assets/images/stars.svg"
+                alt="stars png"
+              />
+              <h4>$12.00</h4>
+            </div>
+            <div class="dish">
+              <img src="./assets/images/dish-2.png" alt="dish png" />
+              <p>Barbecue Shish kebab Shashlik Skewer</p>
+              <img
+                class="star-img"
+                src="./assets/images/stars.svg"
+                alt="stars png"
+              />
+              <h4>$12.00</h4>
+            </div>
+            <div class="dish">
+              <img src="./assets/images/dish-3.png" alt="dish png" />
+              <p>Barbecue Shish kebab Shashlik Skewer</p>
+              <img
+                class="star-img"
+                src="./assets/images/stars.svg"
+                alt="stars png"
+              />
+              <h4>$12.00</h4>
+            </div>
+            <div class="dish">
+              <img src="./assets/images/dish-4.png" alt="dish png" />
+              <p>Barbecue Shish kebab Shashlik Skewer</p>
+              <img
+                class="star-img"
+                src="./assets/images/stars.svg"
+                alt="stars png"
+              />
+              <h4>$12.00</h4>
+            </div>
+          </div>
+          <img
+            class="brand__img"
+            src="./assets/images/brand__sign.svg"
+            alt=""
+          />
+        </div>
+      </section>
+      <!----------------------/Dishes Section---------------------->
+
+      <!----------------------/Menu Section---------------------->
+      <section id="menu">
+        <div class="container">
+          <h1>Our Regular Menu Pack</h1>
+          <div class="ap-tab">
+            <ul class="ap-tab-list menu-lists">
+              <li class="ap-tab-item">
+                <a class="ap-tab-link" href="#">All</a>
+              </li>
+              <li class="ap-tab-item">
+                <a class="ap-tab-link" href="#">Shawarma</a>
+              </li>
+              <li class="ap-tab-item list-3">
+                <a class="ap-tab-link" href="#">Turk Kebab</a>
+              </li>
+              <li class="ap-tab-item list-4">
+                <a class="ap-tab-link" href="#">Hamburger Kebab</a>
+              </li>
+              <li class="ap-tab-item list-5">
+                <a class="ap-tab-link" href="#">Doner kebab</a>
+              </li>
+              <li class="ap-tab-item list-6">
+                <a class="ap-tab-link" href="#">Shish kebab</a>
+              </li>
+              <li class="ap-tab-item list-7">
+                <a class="ap-tab-link" href="#">French fries Pizza</a>
+              </li>
+              <li class="ap-tab-item">
+                <a class="ap-tab-link" href="#">Desserts</a>
+              </li>
+            </ul>
+          </div>
+          <div class="ap-tab-container menu__tab">
+            <div class="ap-tab-content">
+              <div class="menu__cards">
+                <div class="menu__card">
+                  <img src="./assets/images/pack-1.png" alt="pack" />
+                  <h6>Barbecue Shish kebab Shashlik Skewer</h6>
+                  <h4>$12.00</h4>
+                </div>
+                <div class="menu__card">
+                  <img src="./assets/images/pack-2.png" alt="pack" />
+                  <h6>Barbecue Shish kebab Shashlik Skewer</h6>
+                  <h4>$12.00</h4>
+                </div>
+                <div class="menu__card">
+                  <img src="./assets/images/pack-3.png" alt="pack" />
+                  <h6>Barbecue Shish kebab Shashlik Skewer</h6>
+                  <h4>$12.00</h4>
+                </div>
+                <div class="menu__card">
+                  <img src="./assets/images/pack-4.png" alt="pack" />
+                  <h6>Barbecue Shish kebab Shashlik Skewer</h6>
+                  <h4>$12.00</h4>
+                </div>
+                <div class="menu__card">
+                  <img src="./assets/images/pack-5.png" alt="pack" />
+                  <h6>Barbecue Shish kebab Shashlik Skewer</h6>
+                  <h4>$12.00</h4>
+                </div>
+                <div class="menu__card">
+                  <img src="./assets/images/pack-6.png" alt="pack" />
+                  <h6>Barbecue Shish kebab Shashlik Skewer</h6>
+                  <h4>$12.00</h4>
+                </div>
+                <div class="menu__card">
+                  <img src="./assets/images/pack-7.png" alt="pack" />
+                  <h6>Barbecue Shish kebab Shashlik Skewer</h6>
+                  <h4>$12.00</h4>
+                </div>
+                <div class="menu__card">
+                  <img src="./assets/images/pack-8.png" alt="pack" />
+                  <h6>Barbecue Shish kebab Shashlik Skewer</h6>
+                  <h4>$12.00</h4>
+                </div>
+                <div class="menu__card">
+                  <img src="./assets/images/pack-9.png" alt="pack" />
+                  <h6>Barbecue Shish kebab Shashlik Skewer</h6>
+                  <h4>$12.00</h4>
+                </div>
+                <div class="menu__card">
+                  <img src="./assets/images/pack-10.png" alt="pack" />
+                  <h6>Barbecue Shish kebab Shashlik Skewer</h6>
+                  <h4>$12.00</h4>
+                </div>
+                <div class="menu__card">
+                  <img src="./assets/images/pack-11.png" alt="pack" />
+                  <h6>Barbecue Shish kebab Shashlik Skewer</h6>
+                  <h4>$12.00</h4>
+                </div>
+                <div class="menu__card">
+                  <img src="./assets/images/pack-12.png" alt="pack" />
+                  <h6>Barbecue Shish kebab Shashlik Skewer</h6>
+                  <h4>$12.00</h4>
+                </div>
+              </div>
+            </div>
+            <div class="ap-tab-content">
+              <div class="menu__cards">
+                <div class="menu__card">
+                  <img src="./assets/images/pack-4.png" alt="pack" />
+                  <h6>Barbecue Shish kebab Shashlik Skewer</h6>
+                  <h4>$12.00</h4>
+                </div>
+                <div class="menu__card">
+                  <img src="./assets/images/pack-8.png" alt="pack" />
+                  <h6>Barbecue Shish kebab Shashlik Skewer</h6>
+                  <h4>$12.00</h4>
+                </div>
+                <div class="menu__card">
+                  <img src="./assets/images/pack-9.png" alt="pack" />
+                  <h6>Barbecue Shish kebab Shashlik Skewer</h6>
+                  <h4>$12.00</h4>
+                </div>
+                <div class="menu__card">
+                  <img src="./assets/images/pack-6.png" alt="pack" />
+                  <h6>Barbecue Shish kebab Shashlik Skewer</h6>
+                  <h4>$12.00</h4>
+                </div>
+              </div>
+            </div>
+            <div class="ap-tab-content">
+              <div class="menu__cards">
+                <div class="menu__card">
+                  <img src="./assets/images/pack-11.png" alt="pack" />
+                  <h6>Barbecue Shish kebab Shashlik Skewer</h6>
+                  <h4>$12.00</h4>
+                </div>
+                <div class="menu__card">
+                  <img src="./assets/images/pack-3.png" alt="pack" />
+                  <h6>Barbecue Shish kebab Shashlik Skewer</h6>
+                  <h4>$12.00</h4>
+                </div>
+                <div class="menu__card">
+                  <img src="./assets/images/pack-7.png" alt="pack" />
+                  <h6>Barbecue Shish kebab Shashlik Skewer</h6>
+                  <h4>$12.00</h4>
+                </div>
+                <div class="menu__card">
+                  <img src="./assets/images/pack-5.png" alt="pack" />
+                  <h6>Barbecue Shish kebab Shashlik Skewer</h6>
+                  <h4>$12.00</h4>
+                </div>
+              </div>
+            </div>
+            <div class="ap-tab-content">
+              <div class="menu__cards">
+                <div class="menu__card">
+                  <img src="./assets/images/pack-12.png" alt="pack" />
+                  <h6>Barbecue Shish kebab Shashlik Skewer</h6>
+                  <h4>$12.00</h4>
+                </div>
+                <div class="menu__card">
+                  <img src="./assets/images/pack-9.png" alt="pack" />
+                  <h6>Barbecue Shish kebab Shashlik Skewer</h6>
+                  <h4>$12.00</h4>
+                </div>
+                <div class="menu__card">
+                  <img src="./assets/images/pack-10.png" alt="pack" />
+                  <h6>Barbecue Shish kebab Shashlik Skewer</h6>
+                  <h4>$12.00</h4>
+                </div>
+                <div class="menu__card">
+                  <img src="./assets/images/pack-2.png" alt="pack" />
+                  <h6>Barbecue Shish kebab Shashlik Skewer</h6>
+                  <h4>$12.00</h4>
+                </div>
+              </div>
+            </div>
+            <div class="ap-tab-content">
+              <div class="menu__cards">
+                <div class="menu__card">
+                  <img src="./assets/images/pack-11.png" alt="pack" />
+                  <h6>Barbecue Shish kebab Shashlik Skewer</h6>
+                  <h4>$12.00</h4>
+                </div>
+                <div class="menu__card">
+                  <img src="./assets/images/pack-1.png" alt="pack" />
+                  <h6>Barbecue Shish kebab Shashlik Skewer</h6>
+                  <h4>$12.00</h4>
+                </div>
+                <div class="menu__card">
+                  <img src="./assets/images/pack-4.png" alt="pack" />
+                  <h6>Barbecue Shish kebab Shashlik Skewer</h6>
+                  <h4>$12.00</h4>
+                </div>
+                <div class="menu__card">
+                  <img src="./assets/images/pack-5.png" alt="pack" />
+                  <h6>Barbecue Shish kebab Shashlik Skewer</h6>
+                  <h4>$12.00</h4>
+                </div>
+              </div>
+            </div>
+            <div class="ap-tab-content">
+              <div class="menu__cards">
+                <div class="menu__card">
+                  <img src="./assets/images/pack-1.png" alt="pack" />
+                  <h6>Barbecue Shish kebab Shashlik Skewer</h6>
+                  <h4>$12.00</h4>
+                </div>
+                <div class="menu__card">
+                  <img src="./assets/images/pack-3.png" alt="pack" />
+                  <h6>Barbecue Shish kebab Shashlik Skewer</h6>
+                  <h4>$12.00</h4>
+                </div>
+                <div class="menu__card">
+                  <img src="./assets/images/pack-5.png" alt="pack" />
+                  <h6>Barbecue Shish kebab Shashlik Skewer</h6>
+                  <h4>$12.00</h4>
+                </div>
+                <div class="menu__card">
+                  <img src="./assets/images/pack-7.png" alt="pack" />
+                  <h6>Barbecue Shish kebab Shashlik Skewer</h6>
+                  <h4>$12.00</h4>
+                </div>
+              </div>
+            </div>
+            <div class="ap-tab-content">
+              <div class="menu__cards">
+                <div class="menu__card">
+                  <img src="./assets/images/pack-9.png" alt="pack" />
+                  <h6>Barbecue Shish kebab Shashlik Skewer</h6>
+                  <h4>$12.00</h4>
+                </div>
+                <div class="menu__card">
+                  <img src="./assets/images/pack-8.png" alt="pack" />
+                  <h6>Barbecue Shish kebab Shashlik Skewer</h6>
+                  <h4>$12.00</h4>
+                </div>
+                <div class="menu__card">
+                  <img src="./assets/images/pack-6.png" alt="pack" />
+                  <h6>Barbecue Shish kebab Shashlik Skewer</h6>
+                  <h4>$12.00</h4>
+                </div>
+                <div class="menu__card">
+                  <img src="./assets/images/pack-4.png" alt="pack" />
+                  <h6>Barbecue Shish kebab Shashlik Skewer</h6>
+                  <h4>$12.00</h4>
+                </div>
+              </div>
+            </div>
+            <div class="ap-tab-content">
+              <div class="menu__cards">
+                <div class="menu__card">
+                  <img src="./assets/images/pack-8.png" alt="pack" />
+                  <h6>Barbecue Shish kebab Shashlik Skewer</h6>
+                  <h4>$12.00</h4>
+                </div>
+                <div class="menu__card">
+                  <img src="./assets/images/pack-12.png" alt="pack" />
+                  <h6>Barbecue Shish kebab Shashlik Skewer</h6>
+                  <h4>$12.00</h4>
+                </div>
+                <div class="menu__card">
+                  <img src="./assets/images/pack-3.png" alt="pack" />
+                  <h6>Barbecue Shish kebab Shashlik Skewer</h6>
+                  <h4>$12.00</h4>
+                </div>
+                <div class="menu__card">
+                  <img src="./assets/images/pack-1.png" alt="pack" />
+                  <h6>Barbecue Shish kebab Shashlik Skewer</h6>
+                  <h4>$12.00</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!----------------------/Menu Section---------------------->
+
+      <!----------------------Customers Section---------------------->
+      <section id="customers">
+        <div class="container">
+          <h1 class="mb-3">Testimony</h1>
+          <img class="mb-2" src="./assets/images/spoon.svg" alt="spoon svg" />
+          <h2>Happy customers</h2>
+          <div class="owl-carousel owl-theme" id="owl-carousel">
+            <div class="customer__card">
+              <h1 class="customer__card--title">Maria</h1>
+              <p class="customer__card--subtitle">
+                Lorem ipsum dolor sit amet, consectetur adipiscing sit. auctor
+                sit iaculis in arcu. Vulputate nulla lobortis mauris eget sit.
+                Nulla scelerisque scelerisq...
+              </p>
+              <div class="customer__card--data">
+                <div class="data">
+                  <img src="./assets/images/calendar.svg" alt="" />
+                  <span>06/02/2022</span>
+                </div>
+                <div class="data">
+                  <img src="./assets/images/clock.svg" alt="" />
+                  <span>11:15</span>
+                </div>
+                <div class="data">
+                  <img src="./assets/images/eye.svg" alt="" />
+                  <span>222</span>
+                </div>
+              </div>
+            </div>
+            <div class="customer__card">
+              <h1 class="customer__card--title">Maria</h1>
+              <p class="customer__card--subtitle">
+                Lorem ipsum dolor sit amet, consectetur adipiscing sit. auctor
+                sit iaculis in arcu. Vulputate nulla lobortis mauris eget sit.
+                Nulla scelerisque scelerisq...
+              </p>
+              <div class="customer__card--data">
+                <div class="data">
+                  <img src="./assets/images/calendar.svg" alt="" />
+                  <span>06/02/2022</span>
+                </div>
+                <div class="data">
+                  <img src="./assets/images/clock.svg" alt="" />
+                  <span>11:15</span>
+                </div>
+                <div class="data">
+                  <img src="./assets/images/eye.svg" alt="" />
+                  <span>222</span>
+                </div>
+              </div>
+            </div>
+            <div class="customer__card">
+              <h1 class="customer__card--title">Maria</h1>
+              <p class="customer__card--subtitle">
+                Lorem ipsum dolor sit amet, consectetur adipiscing sit. auctor
+                sit iaculis in arcu. Vulputate nulla lobortis mauris eget sit.
+                Nulla scelerisque scelerisq...
+              </p>
+              <div class="customer__card--data">
+                <div class="data">
+                  <img src="./assets/images/calendar.svg" alt="" />
+                  <span>06/02/2022</span>
+                </div>
+                <div class="data">
+                  <img src="./assets/images/clock.svg" alt="" />
+                  <span>11:15</span>
+                </div>
+                <div class="data">
+                  <img src="./assets/images/eye.svg" alt="" />
+                  <span>222</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <img
+            class="brand-img"
+            src="./assets/images/brand__sign.svg"
+            alt="brand"
+          />
+        </div>
+      </section>
+      <!----------------------/Customers Section---------------------->
+
+      <!----------------------News Section---------------------->
+      <section id="news">
+        <div class="container">
+          <h1>News</h1>
+          <img src="./assets/images/spoon.svg" alt="spoon" />
+          <h2>Gerícht updates</h2>
+          <div class="new__cards row">
+            <div class="card col-md-6 col-xxl-4">
+              <img src="./assets/images/barbecue.png" alt="png" />
+              <h3 class="card__title">
+                tips for prepping and caring for your grill
+              </h3>
+              <p class="card__subtitle">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Volutpat mattis ipsum turpis elit elit scelerisque egestas mus
+                in.
+              </p>
+              <div class="card__bottom">
+                <a href="#">Read More</a>
+                <span>16 Apr 2021</span>
+              </div>
+            </div>
+            <div class="card col-md-6 col-xxl-4">
+              <img src="./assets/images/barbecue.png" alt="png" />
+              <h3 class="card__title">
+                tips for prepping and caring for your grill
+              </h3>
+              <p class="card__subtitle">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Volutpat mattis ipsum turpis elit elit scelerisque egestas mus
+                in.
+              </p>
+              <div class="card__bottom">
+                <a href="#">Read More</a>
+                <span>16 Apr 2021</span>
+              </div>
+            </div>
+            <div class="card col-md-6 col-xxl-4">
+              <img src="./assets/images/barbecue.png" alt="png" />
+              <h3 class="card__title">
+                tips for prepping and caring for your grill
+              </h3>
+              <p class="card__subtitle">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Volutpat mattis ipsum turpis elit elit scelerisque egestas mus
+                in.
+              </p>
+              <div class="card__bottom">
+                <a href="#">Read More</a>
+                <span>16 Apr 2021</span>
+              </div>
+            </div>
+          </div>
+          <div class="btn">
+            <a href="#" class="news__btn">View More</a>
+          </div>
+        </div>
+      </section>
+      <!----------------------/News Section---------------------->
+
+      <!----------------------Modal Section---------------------->
+      <section id="modal">
+        <!-- Button trigger modal -->
+        <img src="./assets/images/vedio.png" alt="" />
+        <div class="container">
+          <button
+            type="button"
+            class="btn btn-primary play"
+            data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop"
+          >
+            <img src="./assets/images/Play.svg" alt="" />
+          </button>
+
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="staticBackdrop"
+            data-bs-backdrop="static"
+            data-bs-keyboard="false"
+            tabindex="-1"
+            aria-labelledby="staticBackdropLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                    Turkish Kebab
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <iframe width="465" autoplay=1, mute=1, controls=0 height="315" src="https://www.youtube.com/embed/5oj_tT6pOOg?si=7gcDoXEJUUdGompf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <!-- <button type="button" class="btn btn-primary">
+                    understood
+                  </button> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!---------------------- /Modal Section---------------------->
+
+      <!----------------------Gallery Section---------------------->
+      <section id="gallery">
+        <div class="container">
+          <div class="row galleries">
+            <div class="gallery__infos col-12 col-xl-4">
+              <h3 class="gallery__infos--title">
+                Instagram 
+              <h3>
+              <img class="gallery__infos--spoon" src="./assets/images/spoon.svg" alt="">
+              <h1 class="gallery__infos--bigtitle">
+                Photo Gallery
+              </h1>
+              <p class="gallery__infos--subtitle">Lorem ipsum dolor sit amet, 
+                consectetur adipiscing elit. Volutpat mattis 
+                ipsum turpis elit elit scelerisque egestas mu.
+              </p>
+              <a href="#">View More</a>
+            </div>
+            <div class="gallery__card--carousel col-12 col-xl-8">
+              <div class="owl-carousel owl-theme" id="gallery-carousel">
+                <div class="gallery__card">
+                  <div class="overlay">
+                    <a href="https://www.threads.net/@asilbekxoliyorov">
+                      <img src="./assets/images/u_instagram (1).svg" alt="">
+                    </a>
+                  </div>
+                  <img src="./assets/images/galery-1.png" alt="">
+                </div>
+                <div class="gallery__card">
+                  <div class="overlay">
+                    <img src="./assets/images/u_instagram (1).svg" alt="">
+                  </div>
+                  <img src="./assets/images/galery-2.png" alt="">
+                </div>
+                <div class="gallery__card">
+                  <div class="overlay">
+                    <img src="./assets/images/u_instagram (1).svg" alt="">
+                  </div>                  
+                  <img src="./assets/images/galery-3.png" alt="">
+                </div>
+                <div class="gallery__card">
+                  <div class="overlay">
+                    <img src="./assets/images/u_instagram (1).svg" alt="">
+                  </div>                  
+                  <img src="./assets/images/galery-4.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+      <!----------------------/Gallery Section---------------------->
+    </main>
+    <footer>
+      <!----------------------Footer Section---------------------->
+      <div id="footer">
+        <div class="container">
+          <div class="top__footer">
+            <h1>Newsletter</h1>
+            <h2>Subscribe to Our Newsletter</h2>
+            <p>And never miss latest Updates!</p>
+            <div class="footer__form">
+              <input type="email" placeholder="Email Address">
+              <button type="submit">Subscribe</button>
+            </div>
+          </div>
+          <div class="bottom__footer">
+            <div class="footer__info">
+              <h1>Contact Us</h1>
+              <p>9 W 53rd St, London, NY 10019, UK</p>
+              <p>+1 212-344-1230</p>
+              <p>+1 212-344-1230</p>
+            </div>
+            <div class="footer__info">
+              <img src="./assets//images/logo.png" alt="">
+              <p>"The best way to find yourself is to lose yourself in the service of others.”</p>
+              <div class="footer__medias">
+                <img src="./assets/images/u_facebook-f.svg" alt="">
+                <img src="./assets/images/u_instagram (1).svg" alt="">
+                <img src="./assets/images/u_twitter-alt.svg" alt="">
+              </div>
+            </div>
+            <div class="footer__info">
+              <h1>Working Hours</h1>
+              <p>Monday-Friday:</p>
+              <p>Saturday-Sunday:</p>
+              <p>07:00am -11:00 pm</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <!----------------------/Footer Section---------------------->
+    </footer>
+
+    <script src="./js/bootsrtrap.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/abdulazizcreator/ap-tab/main.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+      integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

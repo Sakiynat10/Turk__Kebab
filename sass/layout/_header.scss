@@ -1,0 +1,80 @@
+@use "../utils/variables" as var;
+@use "../utils/mixins" as mxn;
+@use "../utils/helpers";
+@use "../themes/backtop";
+
+#loading{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    opacity: 0.8;
+    background-color: white;
+    transition: 1s;
+}
+
+#loading.loading-none{
+    opacity: 0;
+    z-index: -1;
+}
+
+#backtop{
+    position: fixed;
+    bottom: 1200px;
+    right: 50px;
+    transition: 1s;
+    a{
+        padding: 30px;
+        img{
+            width: 30px;
+        }
+    }
+}
+
+#backtop.backtop-show{
+    z-index: 99;
+    bottom: 50px;
+    a{
+        padding: 30px;
+        img{
+            width: 50px;
+        }
+    }
+}
+
+nav{
+	padding: 20px 0 !important;
+    transition: 0.5s;
+}
+
+.navbar-shrink {
+	padding: 10px 0 !important;
+    box-shadow: 1px 1px 5px 5px var.$white-color;
+
+}
+
+#navbar{
+    background-color: var.$primary-color !important;
+
+    .offcanvas-body{
+        .navbar-nav{
+            align-items: center;
+            .nav-item{
+                .nav-link{
+                    @extend %title__16__white;
+                    &:hover{
+                        color: var.$text-color;
+                    }
+                }
+            }
+            .nav-log{
+                @include mxn.btn;
+            }
+        }
+    }
+}

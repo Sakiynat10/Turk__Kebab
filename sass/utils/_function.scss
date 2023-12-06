@@ -1,0 +1,4 @@
+@function containerWidth($width, $padding, $mobilePadding){
+    @return $width - 2 * $padding + 2 * $mobilePadding;
+}
+
